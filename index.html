@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <style>
+
+        /* Starter template  */
+        *{
+            padding:0px;
+            margin:0px;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        ul{
+            list-style: none;
+        }
+        p{
+            margin-bottom: 0;
+        }
+        /* end starter template */
+
+        /* header */
+        #header-wrapper{
+            width: 100vw;
+            position:fixed;
+            background: lightblue;
+            height: 100px;
+            z-index: 1;
+            display: flex
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navv{
+            display: flex;
+            /* justify-content; */
+        }
+        .navv li{
+            margin:5px 10px;
+            padding:5px 10px;
+        }
+        /* header end */
+
+        /* home start */
+            #home-wrapper{
+                min-height: 100vh;
+                padding-top:10rem;
+            }
+            #home{
+                min-height: 100vh;
+            }
+
+            #background{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position:relative;
+            }
+            .main-background{
+                background: black;
+                width: 400px;
+                height: 500px;
+                border-radius: 190px;
+                position:relative;
+            }
+            .ball{
+                position:absolute;
+                border-radius: 50%;
+            }
+            #ball1{
+                width: 15px;
+                height: 15px;
+                background:red;
+                top:200px;
+                right: -40px;
+            }
+            #ball2{
+                width: 30px;
+                height: 30px;
+                background:red;
+            }
+            #ball3{
+                width: 50px;
+                height: 50px;
+                background:blue;
+                left:-20px;
+                bottom:150px;
+            }
+            #ball4{
+                width: 50px;
+                height: 50px;
+                background:blue;
+                right:-20px;
+                bottom:200px;
+            }
+
+            #short-statement p{
+                font-weight: bold;
+                font-size: 1.1rem;
+            }
+            #intro-statement{
+                word-spacing: 5px;
+                font-size: 3rem;
+                font-weight:bold;
+                letter-spacing: 2px;
+            }
+            #ctc{
+                padding: 2.5rem 5px;
+                padding-bottom: 2rem;
+            }
+            #ctc a{
+                padding:10px 3rem;
+                border:1px solid black;
+                border-radius: 60px;
+            }
+        /* home end */
+        /* SERVICE START */
+            #service-wrapper{
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+            }
+            #service-top{
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                padding-top: 1rem;
+                text-align: center;
+            }
+            #service-heading p{
+                padding:5px 25px;
+                border:1px solid black;
+                border-radius: 25px;
+            }
+            #service-top h3{
+                margin:10px;
+                line-height: 2rem;
+                font-size:2rem;
+                letter-spacing: 2px;
+                word-spacing: 2px;
+            }
+            #service-statement{
+                word-spacing: 2px;
+                padding: 16px;
+                font-size: 1.1rem;
+                max-width: 600px;
+            }
+            #service-bottom{
+                display: flex;
+                justify-content: space-between;
+                column-gap: 2rem;
+                padding:2rem;
+            }
+            .service-wrapper
+            {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid black;
+                padding:10px 1rem;
+                max-width: 400px;
+                width: 100%;
+                min-width: 250px;
+                height: 100%;
+            }
+            .serviceicon{
+                width: 100px;
+                height: 100px;
+                border: 1px solid black;
+                margin:1rem;
+                border-radius: 1px solid black;
+                border-radius: 50%;
+            }
+            .service-description{
+                text-align: center;
+                max-width: 300px;
+            }
+        /* SERVICE END */
+
+        #whatweoffer-wrapper{
+            height: 100vh;
+            display: flex;
+            flex-flow: column;
+            padding:5rem;
+        }
+        #what-we-offer-top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #what-we-offer-top-left{
+            flex:1
+        }
+        #what-we-offer-top-left p{
+            border: 1px solid black;
+            padding: 10px 2rem;
+            display: inline;
+            border-radius: 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 1.1rem;
+        }
+        #what-we-offer-top-left h3{
+            font-size: 2rem;
+            max-width: 400px;
+            margin-top:1rem;
+        }
+        #what-we-offer-top-right{
+            flex:1;
+        }
+        #what-we-offer-top-right p{
+            max-width: 400px;
+            text-align: end;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header-wrapper">
+        <header class="container">
+            <div id="logo">Sinawu</div>
+            <nav  id="common-navigations" >
+                <ul class="navv">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Courses</a></li>
+                    <li><a href="/">About us</a></li>
+                </ul>
+            </nav>
+            <nav id="user-accounts-navigations">
+                <ul class="navv">
+                    <li><a href="/">Log in</a></li>
+                    <li><a href="/">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+      </div>
+      <div id="home-wrapper">
+        <div id="home" class="container">
+            <div class="row">
+                <div id="left-home-wrapper" class="col">
+                  <div class="left-home-contents" id="short-statement">
+                    <p>A Trusted Online Course</p>
+                  </div>
+                  <div class="left-home-contents" id="intro-statement">
+                    <p>Discover the meaning of finance</p>
+                  </div>
+                  <div class="left-home-contents" id="statement-description">
+                    <p>
+                      We are offering top level online course service with our best
+                      experienced team,just get started with us.
+                    </p>
+                  </div>
+                  <div class="left-home-contents" id="ctc">
+                    <a href="/">Enroll Now</a>
+                  </div>
+                  <div class="left-home-contents" id="imp-numbers">
+                    <div id="totalreviews-first" class="numbercontainer">
+                      <p>
+                        <span></span>
+                        <br />
+                        No of Reviews
+                      </p>
+                    </div>
+                    <div class="seperator"></div>
+                    <div id="totalcourse-second" class="numbercontainer">
+                      <p>
+                        <span></span>
+                        <br />
+                        Total Course
+                      </p>
+                    </div>
+                    <div class="seperator"></div>
+                    <div id="learners-third" class="numbercontainer">
+                      <p>
+                        <span></span>
+                        <br />
+                        Dedicated learner
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div id="right-home-wrapper" class="col">
+                    <div id="background">
+                        <div class="main-background">
+                            
+                            <div class="ball" id="ball1"></div>
+                            <div class="ball" id="ball2"></div>
+                            <div class="ball" id="ball3"></div>
+                            <div class="ball" id="ball4"></div>
+                            <div class="content-in-image" id="c1"></div>
+                            <div class="content-in-image" id="c2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div id="service-wrapper" class="container">
+        <div id="service-top">
+          <div id="service-heading">
+            <p>Services</p>
+          </div>
+          <h3>Why online learning</h3>
+          <p id="service-statement">
+            There are many things you can only get if you join online learning
+            that you will not get in ordinary learning
+          </p>
+        </div>
+        <div id="service-bottom">
+          <div id="service1" class="services">
+            <div class="service-wrapper">
+              <div class="serviceicon"></div>
+              <h4 class="service-heading">Easy learning</h4>
+              <div class="service-description">
+                Properly researched courses.Carefully simplified it for you
+              </div>
+            </div>
+          </div>
+          <div id="service2" class="services">
+            <div class="service-wrapper">
+              <div class="serviceicon"></div>
+              <h4 class="service-heading">Save time</h4>
+              <div class="service-description">
+                Now anyone can learn trading within budget
+              </div>
+            </div>
+          </div>
+          <div id="service3" class="services">
+            <div class="service-wrapper">
+              <div class="serviceicon"></div>
+              <h4 class="service-heading">Access everywhere</h4>
+              <div class="service-description">
+                Learn trading from anywhere,anytime
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="whatweoffer-wrapper" class="container">
+        <div id="what-we-offer-top">
+          <div id="what-we-offer-top-left">
+            <p>Class</p>
+            <h3>We are ready to help what you need</h3>
+          </div>
+          <div id="what-we-offer-top-right">
+            <p>
+              There are many things you can only get if you join do eiusmod
+              tempor incididunt ut labore et online learning that you will not
+              get in ordinary learning.
+            </p>
+          </div>
+        </div>
+        <div id="what-we-offer-bottom">
+          <div id="what-we-offer-bottom-top">
+            <div id="what-we-offer-bottom-top-wrapper">
+              <div id="coursescontainer">
+                <div id="course1" class="courses">
+                  <div class="course-wrapper">
+                    <div class="course-top">
+                      <img src="" alt="" />
+                    </div>
+                    <div class="course-bottom">
+                      <div class="course-bottom-wrapper">
+                        <div class="course-bottom-wrapper-top">
+                          <p class="course-type">Design</p>
+                          <div class="course-price-ctn">
+                            <p>
+                              <span id="course1price" class="courseprice"
+                                >$320</span
+                              >
+                              /pack
+                            </p>
+                          </div>
+                        </div>
+                        <div class="course-bottom-wrapper-middle">
+                          <div class="courseheading">
+                            <h3>Create UI Design</h3>
+                          </div>
+                          <div class="coursedetails">
+                            <div class="joined">
+                              <p>
+                                <span class="user-icon"></span
+                                ><span id="courser1-joined-number" class="join"
+                                  >1973</span
+                                >
+                                Joined
+                              </p>
+                            </div>
+                            <div class="videos">
+                              <p>
+                                <span class="user-icon"></span
+                                ><span id="course1-videos-number" class="video"
+                                  >73</span
+                                >
+                                Videos
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="course-bottom-wrapper-bottom">
+                          <div id="course-bottom-wrapper-bottom-left">
+                            <div class="instructor">
+                              <div class="instructor-pic"></div>
+                              <div class="instructor-details">
+                                <p class="instructor-name"></p>
+                                <p class="instructor-type"></p>
+                              </div>
+                            </div>
+                            <a href="">See Details</a>
+                          </div>
+                          <div id="course-bottom-wrapper-bottom-right"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="course2" class="courses">
+                  <div class="course-wrapper"></div>
+                </div>
+                <div id="course3" class="courses">
+                  <div class="course-wrapper"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="what-we-offer-bottom-bottom">
+            <button id="left-btn"></button>
+            <button id="right-btn"></button>
+          </div>
+        </div>
+      </div>
+      <div id="about-us-wrapper">
+        <div id="about-us-top">
+          <p>About us</p>
+          <h3>What make us different</h3>
+          <p>
+            There are many things you can only get if you join online learning
+            that you will not get in ordinary learning
+          </p>
+        </div>
+        <div id="differntiator-points">
+          <div class="points" id="ptn1">
+            <div id="left">
+              <p class="point">01</p>
+            </div>
+            <div id="middle">
+              <p id="middle-top">More affordable cost</p>
+              <p id="middle-bottom">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt laborum iusto voluptatibus, ab dolor deleniti odit non
+                placeat magni nemo sint veritatis illum, quas optio quisquam,
+                molestias magnam provident sequi!
+                <a href="/">Read More</a>
+              </p>
+            </div>
+            <div id="last">
+              <button>-</button>
+            </div>
+          </div>
+          <div class="points" id="ptn2">
+            <div id="left">
+              <p class="point">02</p>
+            </div>
+            <div id="middle">
+              <p id="middle-top">Experienced mentor</p>
+              <p id="middle-bottom">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt laborum iusto voluptatibus, ab dolor deleniti odit non
+                placeat magni nemo sint veritatis illum, quas optio quisquam,
+                molestias magnam provident sequi!
+                <a href="/">Read More</a>
+              </p>
+            </div>
+            <div id="last">
+              <button>-</button>
+            </div>
+          </div>
+          <div class="points" id="ptn3">
+            <div id="left">
+              <p class="point">03</p>
+            </div>
+            <div id="middle">
+              <p id="middle-top">More advanced class</p>
+              <p id="middle-bottom">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt laborum iusto voluptatibus, ab dolor deleniti odit non
+                placeat magni nemo sint veritatis illum, quas optio quisquam,
+                molestias magnam provident sequi!
+                <a href="/">Read More</a>
+              </p>
+            </div>
+            <div id="last">
+              <button>-</button>
+            </div>
+          </div>
+          <div class="points" id="ptn4">
+            <div id="left">
+              <p class="point">04</p>
+            </div>
+            <div id="middle">
+              <p id="middle-top">Free extra class</p>
+              <p id="middle-bottom">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt laborum iusto voluptatibus, ab dolor deleniti odit non
+                placeat magni nemo sint veritatis illum, quas optio quisquam,
+                molestias magnam provident sequi!
+                <a href="/">Read More</a>
+              </p>
+            </div>
+            <div id="last">
+              <button>-</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer-wrapper></footer-wrapper>
+    </div>
+  </body>
+</html>
