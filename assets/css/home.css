@@ -1,0 +1,126 @@
+#home-wrapper{
+    min-height: 100vh;
+    padding-top:10rem;
+    background:#F2FAFC;
+}
+
+#background,#about-us-background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.main-background{
+    background: black;
+    width: 400px;
+    height: 500px;
+    border-radius: 190px;
+    position:relative;
+}
+.main-background img{
+    width:100%;
+    position:absolute;
+}
+.ball{
+    position:absolute;
+    border-radius: 50%;
+}
+#ball1,#ball11{
+    width: 15px;
+    height: 15px;
+    background-image:linear-gradient(to bottom right,#27BADB,#2DC0E1,#33C6E7);
+    top:200px;
+    right: -40px;
+}
+#ball2,#ball22{
+    width: 30px;
+    height: 30px;
+    background-image:linear-gradient(to bottom right,#27BADB,#2DC0E1,#33C6E7);
+}
+#ball3,#ball33{
+    width: 50px;
+    height: 50px;
+    background-image:linear-gradient(to bottom right,#FDCA68,#FCC968,#FCD280);
+    left:-20px;
+    bottom:150px;
+}
+#ball4,#ball44{
+    width: 50px;
+    height: 50px;
+    background-image:linear-gradient(to bottom right,#FDCA68,#FCC968,#FCD280);
+    right:-20px;
+    bottom:200px;
+}
+/* left side */
+#statement-description{
+    margin-top:20px;
+}
+#statement-description p{
+    font-size: 1.2rem;
+    width: 525px;
+    line-height: 2rem;
+    text-align: center;
+    word-spacing: 4px;
+    margin:auto;
+}
+
+#short-statement p{
+    font-weight: bold;
+    color:#3E9CCF;
+}
+#intro-statement{
+    word-spacing: 5px;
+    font-size: 3rem;
+    font-weight:bold;
+    letter-spacing: 2px;
+}
+#intro-statement p{
+    font-size: 4rem;
+    width: 529px;
+    line-height: 5rem;
+    margin:auto;
+    font-weight: 600;
+    letter-spacing: 1;
+    margin-top:1rem;
+}
+
+
+#ctc{
+    padding: 2.5rem 5px;
+    padding-bottom: 2rem;
+
+}
+
+#ctc a{
+    padding:12px 3rem;
+    
+    background:#1A88C7;
+    border-radius: 60px;
+    color:#eee;
+}
+
+#imp-numbers{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+.seperator{
+    background: black;
+    width: 1px;
+}
+.numbercontainer{
+padding:2px 1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.numbercontainer p{
+    color: gray;
+    font-size: 12px;
+}
+.numbercontainer span{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+}

@@ -1,0 +1,228 @@
+#whatweoffer-wrapper{
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    padding:5rem 0px;
+    background-image: linear-gradient(to bottom , #2A4E70,#216D9B ,#1A87C5);
+    overflow: hidden;
+    position: relative;
+}
+.arrow{
+    border:none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.mycontainer{
+    padding-right: 0;
+}
+p{
+    margin-bottom: 0;
+}
+#what-we-offer-bottom{
+    margin-top:2rem;
+}
+#what-we-offer-bottom-bottom{
+    margin-top:3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap:5rem;
+}
+#what-we-offer-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#what-we-offer-top-left{
+    flex:1
+}
+#what-we-offer-top-left p{
+   
+    /* padding: 10px 2rem; */
+    display: inline;
+    border-radius: 25px;
+    text-transform: uppercase;
+    padding:5px 25px;
+    border-radius: 25px;
+    background: #CFE6F2;
+    color: #68A5D2;
+    font-weight: bold;
+}
+#what-we-offer-top-left h3{
+    font-size: 2rem;
+    max-width: 400px;
+    margin-top:1rem;
+    color:#eee;
+}
+#what-we-offer-top-right{
+    flex:1;
+}
+#what-we-offer-top-right p{
+    max-width: 500px;
+    text-align: end;
+    margin: auto;
+    color:#fff;
+}
+
+.courses{
+    min-width:375px;
+    background:#fff;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    overflow: hidden;
+    margin:0px 1rem;
+}
+
+#coursescontainer{
+    display: flex;
+}
+
+.course-bottom-wrapper{
+    padding:2rem 10px;
+    padding-left: 1rem;
+}
+.course-bottom-wrapper-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course-top{
+    background-image: url(../images/malte-helmhold-mQmuv-3jAOc-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.course-top img{
+    visibility: hidden;
+}
+.courseprice{
+    color:#3E9CCF;
+    font-weight:600;
+    font-size: 1.5rem;
+}
+
+.courseheading h3{
+    font-size:22px;
+    font-weight: 600;
+    margin:1rem 0px;
+}
+
+.coursedetails{
+    display: flex;
+    column-gap: 20px;
+}
+.join{
+    margin:0px 5px;
+}
+.joined p{
+    display: flex;
+    column-gap: 1px;
+}
+
+.video{
+    margin: 0px 5px;
+}
+
+.course-bottom-wrapper-bottom{
+    margin-top:1rem;
+}
+.course-bottom-wrapper-bottom-left{
+    display: flex;
+    justify-content: space-between;
+}
+.instructor{
+    column-gap:1rem;
+    display: flex;
+    align-items: center;
+}
+.instructor-pic{
+    width:35px;
+    height: 35px;
+    border-radius:50%;
+    border:1px solid black;
+}
+.instructor-name{
+    font-size:1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.course-type{
+    display: inline;
+    border-radius: 25px;
+    text-transform: uppercase;
+    padding: 5px 25px;
+    border-radius: 25px;
+    background: #CFE6F2;
+    color: #68A5D2;
+    font-weight: bold;
+}
+
+.course-top img{
+    width: 100%;
+}
+
+.course-top{
+    background-image: url('../images/malte-helmhold-mQmuv-3jAOc-unsplash.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.course-bottom-wrapper-bottom-left a{
+    display: inline;
+    border-radius: 25px;
+    text-transform: uppercase;
+    padding:5px 25px;
+    border-radius: 25px;
+    background: #CFE6F2;
+    color: #68A5D2;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bag{
+    position: absolute;
+}
+
+.bag1{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    bottom: 150px;
+    left: -110px;
+    background: #3481B2;
+}
+
+.bag2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 210px;
+    left: 170px;
+    background: #F8C667;
+}
+
+.bag3{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 210px;
+    right: 230px;
+    background: #FCC967;
+}
+
+.bag4{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    right: -140px;
+    top: 60px;
+    background: #3C6583;
+}
