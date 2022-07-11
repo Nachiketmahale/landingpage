@@ -17,6 +17,7 @@ header{
     transition: all 0.3s ease-in-out 0s;
 }
 #header-wrapper{
+    position:relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,3 +116,43 @@ header{
 .design2 .d1,.design2 .d2,.design2 .d3{
     background:#FCC968;
 }
+
+#mobile-nav{
+    display: none;
+    position:absolute;
+    width:calc(100% - 40px );
+    background: #ffff;
+    margin-top:26px;
+    border-radius: 33px;
+    top:100%
+}
+#mobile-nav ul{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+#mobile-nav ul li{
+    padding:1rem;
+}
+#mobile-nav ul li a{
+    font-size: 20px;
+}
+#nav-toggle-btn{
+    display: none;
+    padding: 5px 10px;
+    border: 1px solid black;
+    background: transparent;
+    font-size: 20px;
+}
+/* responsive */
+
+@media only screen and (max-width:992px) {
+    nav{
+        display: none;
+    }
+    #nav-toggle-btn{
+        display: block;
+    }
+}
+
+/* responsive end */
