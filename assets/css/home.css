@@ -74,7 +74,8 @@
     font-weight:bold;
     letter-spacing: 2px;
 }
-#intro-statement p{
+#intro-statement .p{
+    position:relative;
     font-size: 4rem;
     width: 529px;
     line-height: 5rem;
@@ -131,5 +132,120 @@ text-align: center;
 @media only screen and (max-width:1200px){
     #right-home-wrapper{
         display: none;
+    }
+    #imp-numbers{
+        justify-content: center;
+    }
+    .numbercontainer{
+        justify-content: center;
+        padding: 3px 2rem;
+    }
+    #ctc{
+        text-align: center;
+    }
+    #intro-statement .p{
+        width: 559px;
+        font-size: 60px;
+        word-spacing: 5px;
+        letter-spacing: 4px;
+    }
+    #statement-description p{
+        letter-spacing: 1px;
+        word-spacing: 5px;
+        width: 670px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    #intro-statement .p{
+        font-size: 46px;
+        letter-spacing: 3px;
+    }
+    #statement-description p{
+        width: 531px;
+    }
+    .numbercontainer{
+        padding: 3px 2rem;
+    }
+}
+@media only screen and (max-width:650px){
+    #intro-statement .p{
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+    .design1{
+        top:-40px;
+        right: 30px;
+    }
+    #statement-description p{
+        width: 100%;
+        font-size: 16px;
+        letter-spacing: 1px;
+        word-spacing: 0px;
+    }
+}
+
+@media only screen and (max-width:540px){
+    #intro-statement .p{
+        font-size:33px;
+        letter-spacing: 0px;
+        font-size: 33px;
+        text-align: center;
+        width: 100%;
+        line-height: 50px;
+    }
+
+    .design1{
+        top:-40px;
+        right: 30px;
+    }
+    #statement-description p{
+        width: 100%;
+        font-size: 14px;
+        letter-spacing:0px;
+        word-spacing: 0px;
+    }
+    #ctc a{
+        font-size: 14px;
+    }
+    .numbercontainer{
+        padding: 3px 14px;
+    }
+    .numbercontainer span{
+        font-size: 20px;
+    }
+    .design1{
+        top:-56px;
+        right: -18px;
+    }
+    .d1{
+        width: 25px;
+    height: 12px;
+    border-radius: 15px;
+    top: 31px;
+    right: 80px;
+    transform: rotate(-82deg);
+    }
+    .d2{
+        width: 50px;
+    height: 12px;
+    border-radius: 15px;
+    top: 30px;
+    right: 45px;
+    transform: rotate(-60deg);
+    }
+    .d3{
+        width: 25px;
+        height: 12px;
+        border-radius: 15px;
+        top: 50px;
+        right: 46px;
+        transform: rotate(-50deg);
+    }
+}
+
+@media only screen and (max-width:400px){
+    #intro-statement .p{
+        font-size:23px;
     }
 }

@@ -34,6 +34,7 @@
     word-spacing: 2px;
     padding-top: 16px;
     font-weight: 600;
+    width: 580px;
 }
 #service-statement{
     word-spacing: 2px;
@@ -130,4 +131,69 @@
     top: 350px;
     left: 70%;
     background: #BFEDF9;
+}
+
+@media only screen and (max-width:1200px){
+    .back2{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .back1{
+        display: none;
+    }
+    .back3{
+        display: none;
+    }
+    #service-top h3{
+        font-size: 46px;
+    }
+}
+@media only screen and (max-width:650px){
+    #intro-statement .p{
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+    #statement-description p{
+        width: 100%;
+        font-size: 16px;
+        letter-spacing: 1px;
+        word-spacing: 0px;
+    }
+
+    #service-top h3{
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+}
+
+@media only screen and (max-width:540px){
+    #service-top h3{
+        font-size: 33px;
+        letter-spacing: 0px;
+        width: 100%;
+        text-align: center;
+        line-height: 50px;
+    }
+    #service-statement{
+        width: 100%;
+        font-size: 14px;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+
+    
+}
+
+@media only screen and (max-width:540px){
+    .numbercontainer{
+        padding:3px 7px;
+    }
+    .numbercontainer span{
+        font-size: 15px;
+    }
+    .numbercontainer p{
+        font-size: 10px;
+    }
 }

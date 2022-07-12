@@ -1,4 +1,5 @@
 /* header */
+
 a{
     text-decoration: none;
 }
@@ -58,26 +59,27 @@ header{
 }
 /* header end */
 
-.heading{
-    position:relative;
-}
 
 .design1,.design2,.design3,.design4{
     position: absolute;
 }
 .design4{
+    display: none;
     top:-35px;
     right: -100px;
 }
 .design1{
-    top:-30px;
-    right: -65px;
+    top: -45px;
+    right: -72px;
+
 }
 .design2{
+    display: none;
     top:-50px;
     left: 452px;
 }
 .design3{
+    display: none;
     top:-60px;
     left: 555px;
 }
@@ -117,32 +119,32 @@ header{
     background:#FCC968;
 }
 
-#mobile-nav{
-    display: none;
+.mobile-nav{
     position:absolute;
     width:calc(100% - 40px );
     background: #ffff;
     margin-top:26px;
     border-radius: 33px;
-    top:100%
+    top:100%;
+    opacity: 0;
+    transition: all 0.5s ease-out;
 }
-#mobile-nav ul{
+.mobile-nav ul{
     text-align: center;
     width: 100%;
     padding-bottom: 1rem;
 }
-#mobile-nav ul li{
+.mobile-nav ul li{
     padding:1rem;
 }
-#mobile-nav ul li a{
+.mobile-nav ul li a{
     font-size: 20px;
 }
 #nav-toggle-btn{
     display: none;
     padding: 5px 10px;
-    border: 1px solid black;
+    border:none;
     background: transparent;
-    font-size: 20px;
 }
 /* responsive */
 
@@ -155,4 +157,57 @@ header{
     }
 }
 
+@media only screen and (max-width:540px){
+    header{
+        padding: 1rem;
+    }
+}
 /* responsive end */
+#nav-toggle-btn span{
+    display: block;
+    position:relative;
+    width: 25px;
+    height: 2px;
+    transition: all 0.2s ease-out;
+}
+#nav-toggle-btn span::after{
+    content: '';
+    position:absolute;
+    top:8px;
+    left:0px;
+    width:25px;
+    height: 1px ;
+    background:gray;
+    transition: all 0.5s ease-out;
+}
+
+#nav-toggle-btn span::before{
+    content: '';
+    position:absolute;
+    bottom:8px;
+    left: 0px;
+    width:25px;
+    height: 1px ;
+    background: gray;
+    transition: all 0.5s ease-out;
+}
+
+#nav-toggle-btn.opened span::after{
+    -webkit-transform: translateY(-7px) rotate(45deg);
+    -ms-transform: translateY(-7px) rotate(45deg);
+}
+#nav-toggle-btn.opened span::before{
+    -webkit-transform: translateY(7px) rotate(-45deg);
+    -ms-transform: translateY(7px) rotate(-45deg);
+     /* transform: translateY(-7px) rotate(-45deg); */
+}
+
+:-webkit-scrollbar{
+    display:none;
+}
+.gray{
+    background: gray;
+}
+.showheader{
+    opacity: 1;
+}

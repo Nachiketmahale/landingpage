@@ -70,3 +70,54 @@
 
 
 /* responsive */
+
+@media only screen and (max-width:1200px){
+    #about-us-right{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .back1{
+        display: none;
+    }
+    .back3{
+        display: none;
+    }
+    #service-top h3{
+        font-size: 46px;
+    }
+}
+@media only screen and (max-width:650px){
+    #intro-statement .p{
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+    #statement-description p{
+        width: 100%;
+        font-size: 16px;
+        letter-spacing: 1px;
+        word-spacing: 0px;
+    }
+
+    #service-top h3{
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+}
+
+@media only screen and (max-width:540px){
+#aboutusheading{
+    display: block;
+    width: 132px;
+    margin: auto;
+    text-align: center;
+}
+#about-us-top h3{
+    text-align: center;
+    line-height: 45px;
+}
+.about-us-description{
+    text-align: center;
+}
+}

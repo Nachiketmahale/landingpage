@@ -1,0 +1,32 @@
+footer{
+    padding: 5rem 0px;
+}
+#footer-top{
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+#footerfirst{
+    display: flex;
+    row-gap: 1rem;
+}
+.footerdata{
+    display: flex;
+    flex-flow:column;
+    margin-top: 16px;
+}
+.footerdata a{
+    font-size: 16px;
+    color:gray;
+    margin: 6px 0px;
+}
+.fbox{
+    display: flex;
+    flex-flow: column;
+}
+
+.footerheader{
+    font-size: 25px;
+    font-weight: 400;
+}

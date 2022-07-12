@@ -251,7 +251,7 @@
     <link rel="stylesheet" href="./assets/css/service.css">
     <link rel="stylesheet" href="./assets/css/whatweoffer.css">
     <link rel="stylesheet" href="./assets/css/about.css">
-  
+    <link rel="stylesheet" href="./assets/css/footer.css">
   </head>
   <body>
     <div id="wrapper">
@@ -271,16 +271,17 @@
                     <li><a href="/" id="signup">Sign Up</a></li>
                 </ul>
             </nav>
-            <button id="nav-toggle-btn">
-                <i class="fa-solid fa-bars"></i>
+            <button id="nav-toggle-btn" onclick="navbtnclicked()">
+                <span class="gray">
+                </span>
             </button>
-            <div id="mobile-nav">
+            <div class="mobile-nav">
               <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Courses</a></li>
-                <li><a href="/">About us</a></li>
-                <li><a href="/" id="login">Log in</a></li>
-                <li><a href="/" id="signup">Sign Up</a></li>
+                <li><a href="#home-wrapper" onclick="closednav()">Home</a></li>
+                <li><a href="#whatweoffer-wrapper" onclick="closednav()">Courses</a></li>
+                <li><a href="#about-us-wrapper" onclick="closednav()">About us</a></li>
+                <li><a href="/" id="login" onclick="closednav()">Log in</a></li>
+                <li><a href="/" id="signup" onclick="closednav()">Sign Up</a></li>
               </ul>
             </div>
         </div>
@@ -294,7 +295,7 @@
                   </div>
                   <div class="left-home-contents" id="intro-statement">
                     <div class="heading">
-                      <p>Online Course that brings Idea & Talents.
+                      <div class="p">Online Course that brings Idea & Talents.
                         <div class="design1">
                           <div class="design-wrap">
                             <div class="d1"></div>
@@ -302,7 +303,7 @@
                             <div class="d3"></div>
                           </div>
                         </div>
-                      </p>
+                      </div>
                     </div>
                   </div>
                   <div class="left-home-contents" id="statement-description">
@@ -434,7 +435,7 @@
             </p>
           </div>
         </div>
-        <div id="what-we-offer-bottom" class="mycontainer container" style="z-index:1">
+        <div id="what-we-offer-bottom" class="" style="z-index:1">
           <div id="what-we-offer-bottom-top">
             <div id="what-we-offer-bottom-top-wrapper">
               <div id="coursescontainer">
@@ -708,12 +709,12 @@
             </div>
           </div>
           <div id="what-we-offer-bottom-bottom">
-            <button id="left-btn" class="arrow">
+            <button id="left-btn" class="arrow" onclick="scrollleft()">
               <span>
                 <i class="fa-solid fa-arrow-left"></i>
               </span>
             </button>
-            <button id="right-btn" class="arrow">
+            <button id="right-btn" class="arrow" onclick="scrollright()">
               <span>
                 <i class="fa-solid fa-arrow-right"></i>
               </span>
@@ -852,9 +853,51 @@
           </div>
         </div>
       </div>
-      <footer-wrapper></footer-wrapper>
-      <div id="mobile-navigation">
-      </div>
+      <footer-wrapper>
+          <footer class="container">
+            <div id="footer-top" class="row">
+              <div id="footerfirst" class="fbox col-12 col-xl-3 col-md-5 col-sm-12">
+                <div id="footerlogo">
+                  <h3><a href="#">Tushar Ghone</a></h3>
+                </div>
+                <div id="footeremail">
+                  <a href="#">contact@tusharghone.com</a>
+                </div>
+                <div id="footernumber">
+                  <a href="#">+91 9511709158</a>
+                </div>
+              </div>
+              <div id="footersecond" class="fbox col-12 col-xl-3 col-md-5 col-sm-12">
+                  <h3 class="footerheader">Ouick Links</h3>
+                  <div class="footerdata">
+                    <a href="#">Feature</a>
+                    <a href="#">What We Do?</a>
+                    <a href="#">Work Progress</a>
+                    <a href="#">Contact Us</a>
+                  </div>
+              </div>
+              <div id="footerthird" class="fbox col-12 col-xl-3 col-md-5 col-sm-12">
+                <h3 class="footerheader">About Us</h3>
+                <div class="footerdata">
+                  <a href="#">About Singleton</a>
+                  <a href="#">Team</a>
+                  <a href="#">Testimonials</a>
+                  <a href="#">Blog</a>
+                </div>
+              </div>
+              <div id="footerfourth" class="fbox col-12 col-xl-2 col-md-5 col-sm-12">
+                <h3 class="footerheader">Compliance</h3>
+                <div class="footerdata">
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">Terms & Condition</a>
+                </div>
+              </div>
+            </div>
+            <div id="footer-bottom">
+
+            </div>
+          </footer>
+      </footer-wrapper>
     </div>
     <script defer src="./assets/js/index.js">
     </script>
